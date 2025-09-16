@@ -65,7 +65,7 @@ const logoIconsList = [
 
 const abilities = [
   {
-    imgPath: "/images/seo.png",
+    imgPath: "/images/seo.png"  ,
     title: "Problem Solver",
     desc: "I enjoy solving coding challenges and building scalable backend solutions.",
   },
@@ -84,23 +84,23 @@ const abilities = [
 const techStackImgs = [
   {
     name: "React Developer",
-    imgPath: "/images/logos/react.png",
+    imgPath: "/images/logos/react-logo.png",
   },
   {
     name: "MERN Stack Enthusiast",
-    imgPath: "/images/logos/mongodb.png",
+    imgPath: "/images/logos/mern.png",
   },
   {
     name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
+    imgPath: "/images/logos/node-js-logo.png",
   },
   {
     name: "Java Programmer",
     imgPath: "/images/logos/java.png",
   },
   {
-    name: "Animation Developer",
-    imgPath: "/images/logos/gsap.png",
+    name: "ReactNative Developer",
+    imgPath: "/images/logos/reactNative.png",
   },
 ];
 

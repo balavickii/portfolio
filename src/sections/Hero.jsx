@@ -6,6 +6,7 @@ import Button from "../components/Button";
 import { words } from "../constants";
 import HeroExperience from "../components/models/hero_models/HeroExperience";
 
+
 const Hero = () => {
   useGSAP(() => {
     gsap.fromTo(
@@ -51,7 +52,7 @@ const Hero = () => {
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I’m Balavignesh, a developer based in India with a passion for
+              Hi, I’m Adrian, a developer based in Croatia with a passion for
               code.
             </p>
 
@@ -66,7 +67,12 @@ const Hero = () => {
         {/* RIGHT: 3D Model or Visual */}
         <figure>
           <div className="hero-3d-layout">
+           <img src="/models/Gemini_Generated_Image_lei0h1lei0h1lei0.png" alt="I am image for mobile"  className="sm:hidden border-none rounded-2xl"/> 
+          <div className="hidden sm:block w-full h-full">
             <HeroExperience />
+          </div>
+
+           
           </div>
         </figure>
       </div>

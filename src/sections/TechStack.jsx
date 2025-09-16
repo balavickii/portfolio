@@ -3,7 +3,7 @@ import gsap from "gsap";
 
 import TitleHeader from "../components/TitleHeader";
 import TechIconCardExperience from "../components/models/tech_logos/TechIconCardExperience";
-import { techStackIcons } from "../constants";
+import { techStackIcons, techStackImgs } from "../constants";
 // import { techStackImgs } from "../constants";
 
 const TechStack = () => {
@@ -47,10 +47,11 @@ const TechStack = () => {
               The key is set to the name of the tech stack icon, and the classnames are set to 
               card-border, tech-card, overflow-hidden, and group. The xl:rounded-full and rounded-lg 
               classes are only applied on larger screens. */}
-          {techStackIcons.map((techStackIcon) => (
+          
+                   {techStackIcons.map((techStackIcon) => (
             <div
               key={techStackIcon.name}
-              className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
+              className="card-border tech-card overflow-hidden group xl:rounded-full border rounded-lg hidden md:block"
             >
               {/* The tech-card-animated-bg div is used to create a background animation when the 
                   component is hovered. */}
@@ -70,27 +71,31 @@ const TechStack = () => {
               </div>
             </div>
           ))}
+              
+         
 
-          {/* This is for the img part */}
-          {/* {techStackImgs.map((techStackIcon, index) => (
+          {/* This is for the img part for mobile device */}
+          
+              {techStackImgs.map((techStackIcon, index) => (
             <div
               key={index}
-              className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
+              className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg  md:hidden"
             >
               <div className="tech-card-animated-bg" />
               <div className="tech-card-content">
-                <div className="tech-icon-wrapper">
-                  <img src={techStackIcon.imgPath} alt="" />
+                <div className="tech-icon-wrapper ">
+                  <img src={techStackIcon.imgPath} alt=""  className="rounded-[50%] bg-transparent"/>
                 </div>
                 <div className="padding-x w-full">
                   <p>{techStackIcon.name}</p>
                 </div>
               </div>
             </div>
-          ))} */}
+          ))} 
+          </div>
         </div>
       </div>
-    </div>
+    
   );
 };
 
