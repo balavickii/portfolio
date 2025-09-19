@@ -108,7 +108,11 @@ const Contact = () => {
             </div>
           </div>
           <div className="xl:col-span-7 min-h-96">
-            <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden">
+
+            <div className="md:hidden">
+              <img src="/models/Contact_me.jpg" alt="this is img for contact me " className="rounded-xl" />
+            </div>
+            <div className="bg-[#cd7c2e] w-full h-full hidden md:block hover:cursor-grab rounded-3xl overflow-hidden">
               <ContactExperience />
             </div>
           </div>
