@@ -66,8 +66,8 @@ const Hero = () => {
 
         {/* RIGHT: 3D Model or Visual */}
         <figure>
-          <div className="hero-3d-layout">
-           <img src="/models/Gemini_Generated_Image_lei0h1lei0h1lei0.png" alt="I am image for mobile"  className="sm:hidden border-none rounded-2xl"/> 
+          <div className="hero-3d-layout  flex md:flex-col items-center justify-center mt-10">
+           <img src="/models/Gemini_Generated_Image_lei0h1lei0h1lei0.png" alt="I am image for mobile"  className="sm:hidden border-none h-[50%] rounded-2xl w-fit pt-10 "/> 
           <div className="hidden sm:block w-full h-full">
             <HeroExperience />
           </div>
